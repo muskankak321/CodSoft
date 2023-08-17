@@ -1,0 +1,267 @@
+<html>
+<head>
+<style>
+    .parent {
+  border: 1px solid black;
+  text-align: center;
+        height: 610px;
+        width: 1255px;
+    }
+.child {
+  display: inline-block;
+  border: 1px solid black;
+  vertical-align: middle;
+        height: 411px;
+        width: 621px;
+        margin-left: 0px;
+        margin-top: 16px;
+    
+}
+.showdata{
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  
+}
+    
+
+    .style23
+    {
+        height: 13px;
+        width: 296px;
+    }
+    .style29
+    {
+        width: 281px;
+        height: 32px;
+    }
+
+    .style31
+    {
+        width: 281px;
+        height: 8px;
+    }
+    .style32
+    {
+        height: 8px;
+        width: 296px;
+    }
+    .style33
+    {
+        width: 281px;
+        height: 4px;
+    }
+    .style34
+    {
+        height: 4px;
+        width: 296px;
+    }
+    .style35
+    {
+        width: 281px;
+        height: 11px;
+    }
+    .style36
+    {
+        height: 11px;
+        width: 296px;
+    }
+
+    #Text1
+    {
+        height: 24px;
+        width: 129px;
+        margin-left: 84px;
+    }
+
+    #Text2
+    {
+        height: 22px;
+        width: 128px;
+        margin-left: 84px;
+    }
+
+    #Text3
+    {
+        width: 130px;
+        height: 25px;
+        margin-left: 83px;
+    }
+    #Text4
+    {
+        width: 131px;
+        margin-left: 84px;
+    }
+    #Text5
+    {
+        width: 131px;
+        margin-left: 84px;
+    }
+
+    #Submit1
+    {
+        width: 325px;
+        margin-left: 11px;
+        height: 32px;
+    }
+
+    .style37
+    {
+        width: 281px;
+        height: 1px;
+    }
+    .style38
+    {
+        height: 1px;
+        width: 296px;
+    }
+
+    #chemistry
+    {
+        width: 167px;
+        margin-left: 2px;
+    }
+
+    .form-button
+    {
+        width: 270px;
+        margin-left: 11px;
+    }
+    .style39
+    {
+        height: 13px;
+        width: 281px;
+    }
+    
+    #showdata
+    {
+        height: 53px;
+        margin-top: 0px;
+    }
+
+</style>
+    
+
+</head>
+<body bgcolor="#cc0099" style="height: 731px; width: 1338px">
+<h1 align="left" 
+        
+        style="font-family: 'Times New Roman', Times, serif; font-size: xx-large; color: #99CCFF">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    STUDENT GRADING SYSTEM</h1>
+
+<div class='parent'>
+  <div class='child' align="left" 
+        style="background-position: center; background-image: url('B2.jpg')"></div>
+  <div class='child'>
+      <table style="width: 100%; height: 413px;">
+          <tr>
+              <td class="style29" 
+                  style="color: #FFFF00; font-family: Algerian; font-size: x-large;" 
+                  align="center">
+                  &nbsp;
+                  MARKS</td>
+              
+          </tr>
+          <tr>
+              <td class="style33" style="H; color: #FFFFFF;">
+                  &nbsp;MATHEMATICS</td>
+              <td class="style34">
+                  &nbsp;
+                  <input
+			type="text"
+			class="form-control"
+			placeholder="ENTER HERE"
+			id="mathematics"
+			/></td>
+             
+          </tr>
+          <tr>
+              <td class="style31"style="H; color: #FFFFFF;">
+                  CHEMISTRY</td>
+              <td class="style32">
+                  &nbsp;
+                  <input
+			type="text"
+			class="form-control"
+			placeholder="ENTER HERE"
+			id="chemistry"
+			/>
+              </td>
+             
+              
+          </tr>
+          <tr>
+              <td class="style35"style="H; color: #FFFFFF;">
+                  BIOLOGY</td>
+              
+              <td class="style36">
+                  &nbsp;
+                  <input
+			type="text"
+			class="form-control"
+			placeholder="ENTER HERE"
+			id="biology"
+			/>
+              </td>
+              
+              
+          </tr>
+          <tr>
+          <td class="style39"style="H; color: #FFFFFF;">
+                  &nbsp;ENGLISH</td>
+              <td class="style23"style="H; color: #FFFFFF;">
+                  &nbsp;
+                  <input
+			type="text"
+			class="form-control"
+			placeholder="ENTER HERE"
+			id="english"
+			/>
+              </td></tr>
+               <tr>
+          <td class="style39"style="H; color: #FFFFFF;" height="11">
+                  COMPUTER</td>
+              <td class="style23"style="H; color: #FFFFFF;" height="11">
+                  &nbsp;
+                  <input
+			type="text"
+			class="form-control"
+			placeholder="ENTER HERE"
+			id="computer"
+			/>
+              </td></tr>
+               <tr>
+          <td class="style37"style="H; color: #33CC33; font-family: Algerian; font-size: x-large;" 
+                       align="center">
+                  &nbsp;
+                  RESULT</td>
+                  <td class="style38">
+                
+                    <input
+              type="button"
+              value="show Percentage"
+              class="form-button"
+              onclick="find()"
+            />
+            </td>
+              </tr>
+              <tr>
+             
+      </table>
+  
+  </div>
+  <div style="height: 63px; width: 675px; margin-left: 619px"
+  class="form-group showdata">
+    
+		<p id="showdata"></p>
+  </div>
+</div>
+<script src="calc.js"></script>
+
+</body>
+
+
+
+
+</html>
