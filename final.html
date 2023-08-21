@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>GAME</title>
+</head>
+<body>
+<h1>NUMBER GUESS GAME</h1>
+<script>
+const randomNumber=Math.floor(Math.random()*100)+1;
+let trialLeft=5;
+function guessNumber(){
+const input=parseInt(prompt(`Guess the number between 1-100.\nRemaining Trials: ${trialLeft}`));
+if(isNaN(input)){
+    alert("Please enter a valid number");
+    return;
+}
+trialLeft--;
+
+if(input === randomNumber){
+    alert(`Congratulations you guessed right ${randomNumber}.`);
+}
+else if(input<randomNumber){
+    alert("too low! TRY AGAIN!!!");
+}
+else {
+    alert("too high! TRY AGAIN!!!");
+}
+if(trialLeft===0){
+    alert(`Sorry trials exhausted \n Random no. was ${randomNumber}.`);
+}
+else{
+    guessNumber();
+}
+}
+guessNumber();
+</script>
+</body>
+</html>
